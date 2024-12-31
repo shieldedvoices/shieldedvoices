@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shielded Voices Podcast</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .section {
+            padding: 2rem 1rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #007BFF;
+            color: white;
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        #hero {
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 3rem 1rem;
+        }
+
+        .episode-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1rem;
+        }
+
+        .episode {
+            border: 1px solid #ddd;
+            padding: 1rem;
+            border-radius: 5px;
+            background-color: #fff;
+        }
+
+        .team {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            justify-content: center;
+        }
+
+        .host {
+            text-align: center;
+            max-width: 300px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+        .external-link {
+            text-align: center;
+            margin-top: 2rem;
+        }
+
+        .external-link a {
+            color: #007BFF;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Shielded Voices Podcast</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#episodes">Episodes</a></li>
+                    <li><a href="#team">Meet the Hosts</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero">
+        <div class="container">
+            <h2>Breaking the Stigma, Building Resilience</h2>
+            <p>Join us for conversations that matter about mental health, law enforcement, and building stronger communities.</p>
+            <a href="#episodes" class="btn">Listen Now</a>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>The Shielded Voices Podcast is dedicated to fostering open communication about mental health within the law enforcement and first responder community. Hosted by Mitch and Brian, our goal is to break down barriers, share experiences, and support those who serve.</p>
+        </div>
+    </section>
+
+    <section id="episodes" class="section">
+        <div class="container">
+            <h2>Latest Episodes</h2>
+            <div class="episode-list">
+                <div class="episode">
+                    <h3>Episode 1: The Journey Begins</h3>
+                    <p>An introduction to the Shielded Voices Podcast and the mission behind it.</p>
+                    <a href="#" class="btn">Listen</a>
+                </div>
+                <div class="episode">
+                    <h3>Episode 2: Building Resilience</h3>
+                    <p>Exploring strategies for mental health and emotional well-being.</p>
+                    <a href="#" class="btn">Listen</a>
+                </div>
+                <!-- Additional episodes can be added here -->
+            </div>
+        </div>
+    </section>
+
+    <section id="team" class="section">
+        <div class="container">
+            <h2>Meet the Hosts</h2>
+            <div class="team">
+                <div class="host">
+                    <img src="mitchell.jpg" alt="Mitch Pereira">
+                    <h3>Mitchell Pereira</h3>
+                    <p>Co-host, advocate, and experienced law enforcement officer.</p>
+                </div>
+                <div class="host">
+                    <img src="brian.jpg" alt="Brian">
+                    <h3>Brian</h3>
+                    <p>Co-host and senior defensive tactics instructor with a passion for supporting first responders.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>We'd love to hear from you! Whether you have questions, feedback, or want to share your story, reach out to us below.</p>
+            <form action="#" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit" class="btn">Send</button>
+            </form>
+        </div>
+    </section>
+
+    <div class="external-link">
+        <p>Visit our main website: <a href="https://shieldedvoices.com" target="_blank">ShieldedVoices.com</a></p>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Shielded Voices Podcast. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
